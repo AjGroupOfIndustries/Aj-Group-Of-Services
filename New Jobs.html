@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJ Group Of Industries</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file for styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #0044cc;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #0044cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0033aa;
+        }
+
+        .offers-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .offer {
+            background-color: #e4f7ff;
+            padding: 20px;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        .offer:hover {
+            background-color: #c6eaff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to AJ Group Of Industries</h1>
+        <p>Your Career Starts Here</p>
+    </header>
+
+    <div class="container">
+        <!-- Job Application Form Section -->
+        <section class="section">
+            <h2>Apply for a Job</h2>
+            <form id="jobApplicationForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="position">Position Applying For</label>
+                    <select id="position" name="position" required>
+                        <option value="developer">Software Developer</option>
+                        <option value="manager">Project Manager</option>
+                        <option value="hr">HR Specialist</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="coverLetter">Cover Letter</label>
+                    <textarea id="coverLetter" name="coverLetter" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+
+        <!-- Instant Job Offers Section -->
+        <section class="section">
+            <h2>Instant Job Offers</h2>
+            <div class="offers-list">
+                <div class="offer">
+                    <h3>Software Developer</h3>
+                    <p>Location: Remote</p>
+                    <p>Salary: $60,000/year</p>
+                    <button>View Details</button>
+                </div>
+
+                <div class="offer">
+                    <h3>Project Manager</h3>
+                    <p>Location: New York</p>
+                    <p>Salary: $80,000/year</p>
+                    <button>View Details</button>
+                </div>
+
+                <div class="offer">
+                    <h3>HR Specialist</h3>
+                    <p>Location: San Francisco</p>
+                    <p>Salary: $55,000/year</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AJ Group Of Industries. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('jobApplicationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const position = document.getElementById('position').value;
+            const coverLetter = document.getElementById('coverLetter').value;
+
+            // For demo, just showing an alert with the form data
+            alert(`Application submitted! \n\nName: ${name} \nEmail: ${email} \nPhone: ${phone} \nPosition: ${position} \nCover Letter: ${coverLetter}`);
+
+            // Here, you'd typically send this data to your server via an API or form submission
+            // For example, using fetch API to send data to a back-end script
+        });
+    </script>
+</body>
+</html>
