@@ -3,220 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aj Group of Web Developers</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #34495e;
-        }
-        nav a {
-            color: white;
-            padding: 15px 20px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        nav a:hover {
-            background-color: #2980b9;
-        }
-        .container {
-            padding: 20px;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .job-listings {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-        .job-card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
-        }
-        .job-card a {
-            display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            margin-top: 10px;
-            border-radius: 5px;
-        }
-        .job-card a:hover {
-            background-color: #2980b9;
-        }
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        input, textarea, button {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            background-color: #3498db;
-            color: white;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #2980b9;
-        }
-    </style>
+    <meta name="description" content="AJ Group of Industries - Empowering Talent for the Future">
+    <title>AJ Group of Industries</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- Header Section -->
-<header>
-    <h1>Aj Group of Web Developers</h1>
-    <img src="file:///C:/Users/Admin/Downloads/Logo.jpeg" alt="Aj Group Logo" style="width: 100px; height: auto;">
-    <p>Creating Exceptional Web Solutions</p>
-</header>
-
-<!-- Navigation Menu -->
-<nav>
-    <a href="#" onclick="showTab('home')">Home</a>
-    <a href="#" onclick="showTab('jobs')">Jobs</a>
-    <a href="#" onclick="showTab('career')">Career</a>
-    <a href="#" onclick="showTab('apply')">Apply for Jobs</a>
-</nav>
-
-<!-- Home Tab -->
-<div id="home" class="tab-content active container">
-    <h2>About Us</h2>
-    <p>Welcome to Aj Group of Web Developers. We specialize in creating robust, scalable, and innovative web solutions for businesses across various sectors.</p>
-
-    <h3>Terms and Conditions</h3>
-    <p>By using our website and services, you agree to the following terms...</p>
-    <ul>
-        <li>Ensure that all job applications are truthful.</li>
-        <li>Respect the privacy and intellectual property of the company.</li>
-    </ul>
-</div>
-
-<!-- Jobs Tab -->
-<div id="jobs" class="tab-content container">
-    <h2>Job Opportunities</h2>
-    <div class="job-listings">
-        <div class="job-card">
-            <h3>Web Developer</h3>
-            <p>Location: Remote (India)</p>
-            <p>Company: Aj Group of Web Developers</p>
-            <p>Type: Full-Time</p>
-            <a href="#">Apply Now</a>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Aj</h1>
         </div>
-        <div class="job-card">
-            <h3>Frontend Developer</h3>
-            <p>Location: Remote (India)</p>
-            <p>Company: Aj Group of Web Developers</p>
-            <p>Type: Full-Time</p>
-            <a href="#">Apply Now</a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Welcome to AJ Group of Industries</h2>
+            <p>Empowering Talent, Shaping the Future.</p>
         </div>
-        <div class="job-card">
-            <h3>Backend Developer</h3>
-            <p>Location: Remote (India)</p>
-            <p>Company: Aj Group of Web Developers</p>
-            <p>Type: Full-Time</p>
-            <a href="#">Apply Now</a>
-        </div>
-    </div>
-</div>
+    </section>
 
-<!-- Career Tab -->
-<div id="career" class="tab-content container">
-    <h2>Career Opportunities</h2>
-    <p>At Aj Group, we offer a dynamic and exciting environment for developers to grow their skills and advance their careers.</p>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About AJ Group of Industries</h2>
+        <p>Founded by Ajay Kumar, AJ Group of Industries has been at the forefront of innovation...</p>
+    </section>
 
-    <h3>Contact Us</h3>
-    <p>If you have any questions, feel free to contact us:</p>
-    <ul>
-        <li>Email: ajaykumarakonline@gmail.com</li>
-        <li>Phone: +91 7533811373</li>
-    </ul>
-</div>
+    <!-- Careers Section -->
+    <section id="careers">
+        <h2>Careers at AJ Group of Industries</h2>
+        <p>Join a dynamic team of professionals where your skills and passion can make a real difference...</p>
+        <!-- Job listings -->
+        <ul>
+            <li>Software Engineer</li>
+            <li>Marketing Specialist</li>
+            <li>Web developer</li>
+            <li>Data anlysist</li>
+        </ul>
+    </section>
 
-<!-- Apply for Jobs Tab -->
-<div id="apply" class="tab-content container">
-    <h2>Apply for Jobs</h2>
-    <form id="apply-form">
-        <label for="job-title">Web developer specialist</label>
-        <input type="text" id="job-title" name="job_title" required>
-        
-        <label for="qualification">Deploma in web Development related field</label>
-        <textarea id="qualification" name="qualification" required></textarea>
-        
-        <label for="resume">Upload Resume</label>
-        <input type="file" id="resume" name="resume" required>
-        
-        <button type="submit">Submit Application</button>
-    </form>
+    <!-- Recommendations Section -->
+    <section id="recommendations">
+        <h2>Recommendations for Talented Job Seekers</h2>
+        <p>We believe in providing valuable resources to help job seekers succeed...</p>
+        <ul>
+            <li>How to Craft a Perfect Resume</li>
+            <li>Interview Tips from Industry Leaders</li>
+            <li>Job oportunities in best company</li>
+        </ul>
+    </section>
 
-    <div id="offer-letter" style="display: none;">
-        <h3>Your Offer Letter</h3>
-        <p>Congratulations! You have been selected for the position of <span id="Senior Web Developer"></span>.</p>
-        <button onclick="printOfferLetter()">Print Offer Letter</button>
-    </div>
-</div>
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us!</p>
+        <form action="submit_contact_form.php" method="POST">
+            <input type="text" name="name" placeholder="Ajay Kumar" required>
+            <input type="email" name="email" placeholder="ajaykumarak4657@gmail.com" required>
+            <textarea name="message" placeholder="7533811373"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2024 Aj Group of Web Developers | All Rights Reserved</p>
-</footer>
-
-<!-- JavaScript for Tab Navigation and Offer Letter -->
-<script>
-    function showTab(tabId) {
-        // Hide all tabs
-        const tabs = document.querySelectorAll('.tab-content');
-        tabs.forEach(tab => {
-            tab.classList.remove('active');
-        });
-
-        // Show the selected tab
-        document.getElementById(tabId).classList.add('active');
-    }
-
-    document.getElementById('apply-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const jobTitle = document.getElementById('job-title').value;
-        document.getElementById('selected-job-title').innerText = jobTitle;
-        document.getElementById('offer-letter').style.display = 'block';
-    });
-
-    function printOfferLetter() {
-        const offerLetterContent = document.getElementById('offer-letter').innerHTML;
-        const newWindow = window.open('', '', 'width=800,height=600');
-        newWindow.document.write('<html><head><title>Offer Letter</title></head><body>');
-        newWindow.document.write(offerLetterContent);
-        newWindow.document.write('</body></html>');
-        newWindow.document.close();
-        newWindow.print();
-    }
-</script>
-
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AJ Group of Industries. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
