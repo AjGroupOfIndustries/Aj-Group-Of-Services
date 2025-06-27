@@ -20,7 +20,7 @@
 <body>
   <header>
     <h1>@Aj Group Of Web Developers</h1>
-    <p>Email: info@ajgroup.com | Contact: +91-9876543210 | Address: 123 Tech Street, India</p>
+    <p>Email: Ajaykumarakonline@gmail.com | Contact: +91-7533811373 | Address: Dharawali, Mohabbewalwa, Dehradun 248001, India</p>
   </header>
 
   <nav>
@@ -109,5 +109,124 @@
       window.location.href = '#home';
     }
   </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@Aj Group Of Web Developers</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background-color: #222; color: white; padding: 1em; text-align: center; }
+    nav { background-color: #333; padding: 1em; text-align: center; }
+    nav a { color: white; margin: 0 1em; text-decoration: none; }
+    main { padding: 2em; }
+    section { margin-bottom: 2em; }
+    input, button, textarea { padding: 0.5em; margin: 0.5em 0; width: 100%; }
+    .job-form-step { display: none; }
+    .visible { display: block; }
+    .search-bar { width: 100%; padding: 0.5em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>@Aj Group Of Web Developers</h1>
+    <p>Email: Ajaykumarakonline@gmail.com | Contact: +91-7533811373 | Address: Dharawali, Mohabbewalwa, Dehradun 248001, India</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#vacancies">Open Vacancies</a>
+    <a href="#terms">Terms & Conditions</a>
+    <a href="#status">Application Status</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>Welcome to Our Careers Page</h2>
+      <p>Explore our awards and outstanding achievements through the gallery below:</p>
+      <img src="award1.jpg" alt="Award 1" width="200">
+      <img src="award2.jpg" alt="Award 2" width="200">
+
+      <h3>Login with Contact Number</h3>
+      <input type="text" placeholder="Enter Contact Number" id="contactNum">
+      <button onclick="sendOTP()">Get OTP</button>
+      <input type="text" placeholder="Enter OTP" id="otpField" style="display:none;">
+      <button onclick="verifyOTP()" style="display:none;" id="verifyBtn">Verify & Login</button>
+    </section>
+
+    <section id="vacancies">
+      <h2>Current Openings</h2>
+      <ul>
+        <li>Senior Web Developer</li>
+        <li>Web Designer</li>
+        <li>Cyber Security Analyst</li>
+      </ul>
+
+      <input type="text" class="search-bar" placeholder="Search for job...">
+
+      <h3>Apply for a Job</h3>
+      <div id="formStep1" class="job-form-step visible">
+        <input type="text" placeholder="Your Name" id="applicantName">
+        <button onclick="nextStep(2)">Next</button>
+      </div>
+      <div id="formStep2" class="job-form-step">
+        <input type="email" placeholder="Your Email ID" id="applicantEmail">
+        <button onclick="nextStep(3)">Next</button>
+      </div>
+      <div id="formStep3" class="job-form-step">
+        <input type="text" placeholder="Contact Number" id="applicantContact">
+        <button onclick="nextStep(4)">Next</button>
+      </div>
+      <div id="formStep4" class="job-form-step">
+        <input type="file" id="resume">
+        <button onclick="submitApplication()">Submit Application</button>
+      </div>
+    </section>
+
+    <section id="terms">
+      <h2>Terms & Conditions</h2>
+      <p>All applicants must provide valid contact details and agree to data processing terms.</p>
+    </section>
+
+    <section id="status">
+      <h2>Check Application Status</h2>
+      <input type="text" placeholder="Enter Application ID">
+      <button>Check Status</button>
+    </section>
+  </main>
+
+  <script>
+    function sendOTP() {
+      document.getElementById('otpField').style.display = 'block';
+      document.getElementById('verifyBtn').style.display = 'inline';
+      alert('OTP sent to your number!');
+    }
+
+    function verifyOTP() {
+      alert('Login successful!');
+    }
+
+    function nextStep(step) {
+      for (let i = 1; i <= 4; i++) {
+        document.getElementById(`formStep${i}`).classList.remove('visible');
+      }
+      document.getElementById(`formStep${step}`).classList.add('visible');
+    }
+
+    function submitApplication() {
+      const uniqueId = 'AJ8075' + Math.floor(Math.random() * 10000);
+      alert('Application Submitted! Your ID is: ' + uniqueId);
+      window.location.href = '#home';
+    }
+  </script>
+</body>
+</html>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 AJ Group of Industries. All Rights Reserved.</p>
+</footer>
 </body>
 </html>
